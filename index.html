@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Creative Digital Solutions</title>
+  <meta name="description" content="Personal portfolio showcasing skills in networking, cloud engineering, and web development. Building secure, scalable and creative digital solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Portfolio<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="home">
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-grid-bg"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting">
+          <span class="greeting-line"></span>
+          Hello, I'm
+        </p>
+        <h1 class="hero-name">
+          <span class="name-text" id="typed-name"></span>
+          <span class="cursor-blink">|</span>
+        </h1>
+        <div class="hero-title-wrapper">
+          <span class="hero-title-label">I am a</span>
+          <span class="hero-title" id="typed-title"></span>
+        </div>
+        <p class="hero-slogan">"A person who rides clouds, deploys dreams and cooks good food"</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.facebook.com/andyz.1608/" class="social-link" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/andyz.nd/" class="social-link" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ducnn102/" class="social-link" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/AndyZ1608" class="social-link" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:nduc.work@gmail.com" class="social-link" aria-label="Email" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-avatar-ring">
+          <div class="hero-avatar-glow"></div>
+          <div class="hero-avatar">
+            <img src="avatar.jpg" alt="Nguyen Nang Duc" id="profile-avatar" />
+          </div>
+        </div>
+        <div class="hero-floating-badge badge-1">
+          <i class="fas fa-cloud"></i> Cloud
+        </div>
+        <div class="hero-floating-badge badge-2">
+          <i class="fas fa-shield-halved"></i> Security
+        </div>
+        <div class="hero-floating-badge badge-3">
+          <i class="fas fa-network-wired"></i> Networking
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-user"></i> Get To Know</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-image-card">
+            <div class="about-image-frame">
+              <img src="avatar.jpg" alt="Nguyen Nang Duc" />
+            </div>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-count="3">0</span>
+                <span class="stat-label">Years Learning</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="10">0</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="5">0</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <div class="about-card glass-card">
+            <h3 class="about-card-title"><i class="fas fa-crosshairs"></i> Who I Am</h3>
+            <p>I'm a passionate technology enthusiast with a strong foundation in networking, cloud computing, and security. I love building robust infrastructure and creative digital solutions that make a real impact.</p>
+          </div>
+          <div class="about-card glass-card">
+            <h3 class="about-card-title"><i class="fas fa-compass"></i> My Vision</h3>
+            <p>My goal is to become a skilled engineer who bridges the gap between infrastructure and application development. I believe in continuous learning, open-source collaboration, and pushing the boundaries of what technology can achieve.</p>
+          </div>
+          <div class="about-card glass-card">
+            <h3 class="about-card-title"><i class="fas fa-heart"></i> What Drives Me</h3>
+            <p>I'm driven by curiosity and the desire to solve complex problems. From configuring enterprise networks to deploying scalable cloud environments, I thrive on challenges that require both technical expertise and creative thinking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS SECTION ============ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-cogs"></i> My Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-categories">
+        <!-- Networking & Infrastructure -->
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3 class="skill-category-title">Networking & Infrastructure</h3>
+          <div class="skill-badges">
+            <div class="skill-badge">
+              <i class="fas fa-server"></i>
+              <span>Networking</span>
+              <div class="skill-level" data-level="85"></div>
+            </div>
+            <div class="skill-badge">
+              <i class="fab fa-linux"></i>
+              <span>Linux</span>
+              <div class="skill-level" data-level="80"></div>
+            </div>
+            <div class="skill-badge">
+              <i class="fas fa-shield-halved"></i>
+              <span>Firewall</span>
+              <div class="skill-level" data-level="75"></div>
+            </div>
+            <div class="skill-badge">
+              <i class="fas fa-ethernet"></i>
+              <span>TCP/IP</span>
+              <div class="skill-level" data-level="85"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Cloud & DevOps -->
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3 class="skill-category-title">Cloud & DevOps</h3>
+          <div class="skill-badges">
+            <div class="skill-badge">
+              <i class="fas fa-cloud-arrow-up"></i>
+              <span>OpenStack</span>
+              <div class="skill-level" data-level="70"></div>
+            </div>
+            <div class="skill-badge">
+              <i class="fas fa-cubes"></i>
+              <span>VMware</span>
+              <div class="skill-level" data-level="75"></div>
+            </div>
+            <div class="skill-badge">
+              <i class="fab fa-docker"></i>
+              <span>Docker</span>
+              <div class="skill-level" data-level="70"></div>
+            </div>
+            <div class="skill-badge">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+              <div class="skill-level" data-level="80"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Web Development -->
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="skill-category-title">Web Development</h3>
+          <div class="skill-badges">
+            <div class="skill-badge">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+              <div class="skill-level" data-level="90"></div>
+            </div>
+            <div class="skill-badge">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+              <div class="skill-level" data-level="85"></div>
+            </div>
+            <div class="skill-badge">
+              <i class="fab fa-js-square"></i>
+              <span>JavaScript</span>
+              <div class="skill-level" data-level="75"></div>
+            </div>
+            <div class="skill-badge">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+              <div class="skill-level" data-level="65"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS SECTION ============ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-diagram-project"></i> My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="network">Networking</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-card" data-category="network">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Enterprise Network Lab</h3>
+            <p class="project-desc">Designed and configured a multi-site enterprise network with OSPF, BGP routing, VLANs, and firewall policies using GNS3 and Cisco devices.</p>
+            <div class="project-tech">
+              <span>Cisco</span>
+              <span>OSPF</span>
+              <span>BGP</span>
+              <span>GNS3</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card glass-card" data-category="cloud">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">OpenStack Private Cloud</h3>
+            <p class="project-desc">Deployed a private cloud infrastructure using OpenStack with multi-node architecture, including compute, networking, and storage services.</p>
+            <div class="project-tech">
+              <span>OpenStack</span>
+              <span>Linux</span>
+              <span>KVM</span>
+              <span>Neutron</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card glass-card" data-category="web">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">A modern, responsive personal portfolio website featuring glassmorphism design, dark/light themes, smooth animations, and clean code architecture.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card glass-card" data-category="cloud">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fab fa-docker"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Docker Microservices Platform</h3>
+            <p class="project-desc">Built a containerized microservices platform with Docker Compose, implementing service discovery, load balancing, and automated CI/CD pipelines.</p>
+            <div class="project-tech">
+              <span>Docker</span>
+              <span>Nginx</span>
+              <span>CI/CD</span>
+              <span>Linux</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card glass-card" data-category="network">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Network Security Monitor</h3>
+            <p class="project-desc">Implemented a network monitoring and intrusion detection system using Snort, Wireshark, and custom Python scripts for traffic analysis.</p>
+            <div class="project-tech">
+              <span>Snort</span>
+              <span>Python</span>
+              <span>Wireshark</span>
+              <span>pfSense</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="project-card glass-card" data-category="web">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Server Dashboard UI</h3>
+            <p class="project-desc">Designed a real-time server monitoring dashboard with interactive charts, system metrics visualization, and alerting capabilities.</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>Chart.js</span>
+              <span>REST API</span>
+              <span>CSS3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-envelope-open-text"></i> Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-info-card glass-card">
+            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h4>Location</h4>
+            <p>Ha Noi, Vietnam</p>
+          </div>
+          <div class="contact-info-card glass-card">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <h4>Email</h4>
+            <p>nduc.work@gmail.com</p>
+          </div>
+          <div class="contact-info-card glass-card">
+            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+            <h4>Phone</h4>
+            <p>+84 988 789 388</p>
+          </div>
+          <div class="contact-socials">
+            <h4>Follow Me</h4>
+            <div class="contact-social-links">
+              <a href="#" class="contact-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="contact-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="contact-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="contact-social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="mailto:your.email@example.com" class="contact-social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contact-form">
+          <div class="form-group">
+            <label for="form-name">Your Name</label>
+            <div class="input-wrapper">
+              <i class="fas fa-user"></i>
+              <input type="text" id="form-name" name="name" placeholder="John Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-email">Your Email</label>
+            <div class="input-wrapper">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="form-email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-message">Your Message</label>
+            <div class="input-wrapper textarea-wrapper">
+              <i class="fas fa-comment-dots"></i>
+              <textarea id="form-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Portfolio<span class="logo-bracket"> /&gt;</span>
+        </a>
+        <p class="footer-text">"A person who rides clouds, deploys dreams and cooks good food"</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/andyz.1608/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/andyz.nd/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/ducnn102/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/AndyZ1608" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="mailto:nduc.work@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">&copy; 2026 Nguyen Nang Duc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
